@@ -1,0 +1,49 @@
+table.main{
+    width: calc(100% - 22%);
+    position:absolute;
+    top:1%;
+    left:20%;
+    min-height:70%;
+    text-align: left;
+    vertical-align: text-top;
+    border: 2px dashed white;
+}
+table.main *{
+    vertical-align: text-top;
+}
+
+table.sidebar{
+    position:absolute;
+    top:1%;
+    left:1%;
+    min-width:200px;
+    width:300px;
+    text-align:center;
+    width:18%;
+    border: 2px dashed white;
+}
+table.sidebar *{
+    vertical-align: text-top;
+}
+table.sidebar tr.title th{
+    font-size: 26pt;
+}
+.seperator *{
+    border-style:none;
+    min-height:15px;
+    color:black;
+    border-bottom: 2px dashed white;
+}
+th.links{
+    font-size:18pt;
+    font-weight:normal;
+    font-style:italic;
+}
+
+table.container{
+    border-style:none;
+}
+
+table.main *{
+    border-style:none;
+}
