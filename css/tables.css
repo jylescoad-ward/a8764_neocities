@@ -1,8 +1,9 @@
 table.main{
-    width: calc(100% - 22%);
+    min-width: calc(100% - 280px - 4%);
+    max-width: calc(100% - 340px - 4%);
     position:absolute;
     top:1%;
-    left:20%;
+    right:1%;
     min-height:70%;
     text-align: left;
     vertical-align: text-top;
@@ -16,8 +17,8 @@ table.sidebar{
     position:absolute;
     top:1%;
     left:1%;
-    min-width:200px;
-    width:300px;
+    min-width:280px;
+    max-width:340px;
     text-align:center;
     width:18%;
     border: 2px dashed white;
