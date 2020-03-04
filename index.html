@@ -2,17 +2,9 @@
 <html>
     <head>
         <title>a864 - coming soon?</title>
-        <style>
-img.center{
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
-}
-        </style>
         <link href="css/main.css" rel="stylesheet" type="text/css" />
     </head>
-    <body>
+    <body onload="song();">
         <table class="container">
             <tr>
                 <table class="sidebar">
@@ -36,6 +28,9 @@ width: 50%;
                         <tr><td><a href="https://jyles.club?github">github</a></td></tr>
                     </tbody>
 
+                    <tr class="seperator"><td>#</td></tr>
+                    <tr><td>now playing</td></tr>
+                    <tr><td><div id="now_playing"></div></td></tr>
                     <tr class="seperator"><td>#</td></tr>
                     <tr><td><img src="button1.gif"><div align='center'><a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/c.php?d=9&id=122115&s=1' border='0' title='free website hit counter'></a></div></td></tr>
                 </table>
@@ -74,5 +69,6 @@ width: 50%;
                 </table>
             </tr>
         </table>
+        <script src="js/song_picker.js" type="text/javascript">song();</script>
     </body>
 </html>

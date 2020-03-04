@@ -84,7 +84,7 @@ const namelinks = [
 
 
 function marqueeGen(content) {
-	return '<center class="song" ><marquee width="250px" direction="left" scrollamount="3" behavior="scroll">Currently Playing:  ' + content + '</marquee></center>';
+	return '<marquee width="250px" direction="left" scrollamount="3" behavior="scroll">' + content + '</marquee>';
 }
 function randomSongPicker() {
 	let songNames = namelinks;
@@ -94,9 +94,13 @@ function randomSongPicker() {
 	
 	let marquee = songNames[randomInt];
 	
-	let songChoice = "https://storage.googleapis.com/cdn.jyles.club/pageaudio/".songURLs[randomInt];
-	
+	let songChoice = "https://storage.googleapis.com/cdn.jyles.club/pageaudio/" + songURLs[randomInt];
+	console.log(songChoice);
 	let iframe = '<iframe frameborder=0 style="position:absolute;top:0;left:0;" src="' + songChoice + '" allow="autoplay" height="0" id="song_iframe"></iframe>';
 	
 	return marquee + iframe;
+}
+
+function song() {
+	document.getElementById("now_playing").innerHTML = randomSongPicker();
 }
