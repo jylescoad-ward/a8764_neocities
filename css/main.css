@@ -17,3 +17,7 @@ margin-left: auto;
 margin-right: auto;
 width: 50%;
 }
+.song_scroll{
+	border-right: 2px solid white;
+	border-left:  2px solid white;
+}
