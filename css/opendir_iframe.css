@@ -1,17 +1,23 @@
-iframe.opendir_updates_iframe{
-    position:absolute;
+iframe.opendir_updates_iframe {
+    position: absolute;
+    margin-top: 80px;
     border: 2px solid;
     border-color: #4177cc;
     height: 52px;
-    width: 850px;
+    width: 620px;
     -webkit-transition: 0.2s cubic-bezier(0,0,0.02,1);
     transition: 0.2s cubic-bezier(0,0,0.02,1);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-iframe.opendir_updates_iframe:hover{
-    position:absolute;
-    border-color:#c24fab;
+iframe.opendir_updates_iframe:hover {
+    position: absolute;
+    margin-top: -26px;
+    border-color: #c24fab;
     height: 252px;
-    width: 850px;
+    width: 620px;
     -webkit-transition: 0.3s cubic-bezier(0,0,0.02,1);
     transition: 0.3s cubic-bezier(0,0,0.02,1);
+    overflow-x: hidden;
+    z-index: 100;
 }

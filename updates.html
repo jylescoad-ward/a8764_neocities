@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    body{
-        background-color: black;
-        color: white;
-        width: 800px;
-    }
-    table{
-        width: 600px;
-    }
-    table tr{
-        padding-bottom: 24px;
-        border-top: 1px solid white;
-    }
-    a{
-        color:#4287f5;
-    }
-    a:hover{
-        color:#4287f5;
-        font-weight: bold;
-    }
-    td{
-        min-width:180px;
-    }
-    th.date{
-        width:140px;
-    }
-    img{
-        position:absolute;
-        top:5px;
-        left:5px;
-    }
-    .spacer{
-        color: black;
-        padding:2px;
-    }
-</style>
-<body>
-<img src="updates.gif"><br><br><br>
-<table>
-    <tr>
-        <th class="date">2020 March 3rd</th>
-        <td>Moved Position for Homepage and OpenDIR Updates.</td>
-    </tr>
-    <tr><th></th>
-    <td>Added Shading Changes to 88x31 Button.</td></tr>
-    <tr>
-        <th class="date">2020 March 2nd</th>
-        <td>Added Updates for my Home and my <a href="http://share.jyles.club">OpenDirectory</a></td>
-    </tr>
-</table>
-</body>
+    <head>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+                width: 600px;
+            }
+	      table * {
+	          border-top: 1px solid white;
+	          padding-left: 3px;
+	          padding-right: 3px;
+	      }
+
+	      table {
+	          width: 600px;
+	      }
+
+            table tr {
+                padding-bottom: 24px;
+                border-top: 1px solid white;
+            }
+
+            a {
+                color: #4287f5;
+                border-style:none;
+            }
+            sup{
+            border-style:none;
+            }
+
+            a:hover {
+                color: #4287f5;
+                font-weight: bold;
+            }
+
+            td {
+                min-width: 180px;
+            }
+
+            th.date {
+                width: 140px;
+            }
+
+            img {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+            }
+
+            .spacer {
+                color: black;
+                padding: 2px;
+            }
+            #s{
+            border-style:none;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="updates.gif"><br><br><br>
+        <table>
+            <tr>
+                <th class="date">2020 March 4th</th>
+                <td>Added Random Song Generator <sup>(Ported and converted to JS from <a href="https://jyles.club">jyles.club</a>)</sup></td>
+            </tr>
+            <tr><td id="s"></td><td id="s">Added more music to the random song generator</td></tr>
+            <tr>
+                <th class="date">2020 March 3rd</th>
+                <td>Moved Position for Homepage and OpenDIR Updates.</td>
+            </tr>
+            <tr><th id="s"></th><td id="s">Added Shading Changes to 88x31 Button.</td></tr>
+            <tr>
+                <th class="date">2020 March 2nd</th>
+                <td>Added Updates for my Home and my <a href="http://share.jyles.club">OpenDirectory</a></td>
+            </tr>
+        </table>
+        <br />
+        <br />
+    </body>
 </html>

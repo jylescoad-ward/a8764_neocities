@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-    body{
+    html{
         background-color: black;
         color: white;
-        width: 800px;
+        min-width: 600px;
     }
-    table{
-        min-witdh:480px;
-        width:550px;
-        max-witdh:550px;
+    table {
+        min-width: 600px;
     }
-    table tr{
+    table * {
         border-top: 1px solid white;
+        padding-left:3px;
+        padding-right:3px;
+    }
+    a{
+    border-style:none;
+    }
+    tr {
     }
     a{
         color:#4287f5;
@@ -23,13 +28,13 @@
     }
     td{
         min-width:180px;
-        padding:3px;
+        max-width:450px;
     }
     th{
-        padding:3px;
+        width:50px;
     }
     th.date{
-        width:30px;
+        min-width:80px;
     }
     img{
         position:absolute;
@@ -38,40 +43,50 @@
     }
     .spacer{
         color: black;
-        padding:2px;
+    }
+    #s{
+    border-style:none;
+    }
+    #td_sub{
+        border-style:none;
     }
 </style>
 <body>
-<img src="opendir_updates.gif"><br><br><br>
-<table>
-    <tr>
-        <th class="date">2020 March 4th</th>
-        <th>MUSIC</th>
-        <td>Added <a href="http://share.jyles.club/music/HALLEYLABS/B-SIDE%20the%20WAYSIDE/">B-SIDE the WAYSIDE</a></td>
-    </th>
-    <tr>
-        <th class="date">2020 March 3rd</th>
-        <th>MUSIC</th>
-        <td>Added MetaData to Some deadmau5 Albums.</td>
-        <td>Removed Duplicate Album in deadmau5.</td>
-    </tr>
-    <tr>
-        <th class="date">2020 March 2nd</th>
-        <th>MUSIC</th>
-        <td>Added Billie Eilish <br>
-            <a href="http://share.jyles.club/music/Billie%20Eilish/2020%20-%20Essentials/">Apple Music Essentials</a></td>
-        <td>Added Billie Eilish <br>
-            <a href="http://share.jyles.club/music/Billie%20Eilish/2020%20-%20No%20Time%20To%20Die/">No Time to Die Single</a></td>
-        <td>Added Billie Eilish <br>
-            <a href="http://share.jyles.club/music/Billie%20Eilish/2019%20-%20Don't%20Smile%20At%20Me%20(Japanese%20Edition)/">Don't Smile At Me (Japanese Edition)</a></td>
-    </tr>
-    <tr><td style="color:black;">#</td></tr>
-    <tr>
-        <th class="date">2020 March 1st</th>
-        <th>MUSIC</th>
-        <td>Added <br>
-            <a href="http://share.jyles.club/music/HALLEYLABS/HALLEY%20LABS/EVERYDAYS-%20february">EVERYDAYS: february</a></td>
-    </tr>
-</table>
+    <img src="opendir_updates.gif"><br><br><br>
+    <table>
+        <tr>
+            <th class="date">2020 March 4th</th>
+            <th>MUSIC</th>
+            <td>Added <a href="http://share.jyles.club/music/HALLEYLABS/HALLEY%20LABS/B-SIDE%20the%20WAYSIDE/">B-SIDE the WAYSIDE</a></td>
+        </tr>
+        <tr><th id="s"></th><th id="s"></td><td id="td_sub">Added <a href="http://share.jyles.club/music/HALLEYLABS/emma%20essex/COOL%20UNIVERSE%20Original%20Soundtrack">COOL UNIVERSE OST</a></td></tr>
+        <tr>
+            <th class="date">2020 March 3rd</th>
+            <th>MUSIC</th>
+            <td>Added MetaData to Some deadmau5 Albums.</td>
+        </tr>
+        <tr><th id="s"></th><th id="s"></th><td id="td_sub">Removed Duplicate Album in deadmau5.</td></tr>
+        <tr>
+            <th class="date">2020 March 2nd</th>
+            <th>MUSIC</th>
+            <td>
+                Added Billie Eilish <br>
+                <a href="http://share.jyles.club/music/Billie%20Eilish/2019%20-%20Don't%20Smile%20At%20Me%20(Japanese%20Edition)/">Don't Smile At Me (Japanese Edition)</a>
+            </td>
+        </tr>
+        <tr><th id="s"></th><th id="s"></th><td id="td_sub">Added Billie Eilish <br> <a href="http://share.jyles.club/music/Billie%20Eilish/2020%20-%20Essentials/">Apple Music Essentials</a></td></tr>
+        <tr><th id="s"></th><th id="s"></th><td id="td_sub">Added Billie Eilish <br> <a href="http://share.jyles.club/music/Billie%20Eilish/2020%20-%20No%20Time%20To%20Die/">No Time to Die Single</a></td></tr>
+        <tr>
+            <th class="date">2020 March 1st</th>
+            <th>MUSIC</th>
+            <td>
+                Added <br>
+                <a href="http://share.jyles.club/music/HALLEYLABS/HALLEY%20LABS/EVERYDAYS-%20february">EVERYDAYS: february</a>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
 </body>
 </html>
