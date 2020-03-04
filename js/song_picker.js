@@ -81,3 +81,22 @@ const namelinks = [
 '<a href="https://www.youtube.com/watch?v=ZlBn8MqOGhk">beautiful (JQ & Emoticon RMX)</a> by belladonnakillz',
 '<a href="https://www.youtube.com/watch?v=UENrSXo9DDw">BURNING BRAIN (Emoticon & Mayhem&#39;s "STAR LAB" RMX)</a> by The Quick Brown Fox'
 ]
+
+
+function marqueeGen(content) {
+	return '<center class="song" ><marquee width="250px" direction="left" scrollamount="3" behavior="scroll">Currently Playing:  ' + content + '</marquee></center>';
+}
+function randomSongPicker() {
+	let songNames = namelinks;
+	let songURLs = song_url;
+	
+	let randomInt = Math.floor(Math.random() * (songURLs.length - 1));
+	
+	let marquee = songNames[randomInt];
+	
+	let songChoice = "https://storage.googleapis.com/cdn.jyles.club/pageaudio/".songURLs[randomInt];
+	
+	let iframe = '<iframe frameborder=0 style="position:absolute;top:0;left:0;" src="' + songChoice + '" allow="autoplay" height="0" id="song_iframe"></iframe>';
+	
+	return marquee + iframe;
+}
