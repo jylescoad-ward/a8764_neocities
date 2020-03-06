@@ -34,7 +34,7 @@
 
                     <tr class="seperator"><td>#</td></tr>
                     <tr><td>now playing</td></tr>
-                    <tr><td><div id="now_playing"><?php echo marqueeGen(randomSongPicker()); ?></div></td></tr>
+                    <tr><td><div id="now_playing"><?php echo randomSongPicker(); ?></div></td></tr>
                     <tr class="seperator"><td>#</td></tr>
                     <tr><td><img src="button1.gif"><div align='center'><a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/c.php?d=9&id=122115&s=1' border='0' title='free website hit counter'></a></div></td></tr>
                 </table>
