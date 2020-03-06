@@ -1,5 +1,5 @@
 <?php
-	include('https://dxcdn.net/random_song_picker/song_picker.php');
+	include('./..//random_song_picker/song_picker.php');
 ?>
 <!DOCTYPE html>
 <html>
