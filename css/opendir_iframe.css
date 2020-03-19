@@ -4,7 +4,7 @@ iframe.opendir_updates_iframe {
     border: 2px solid;
     border-color: #4177cc;
     height: 52px;
-    width: 620px;
+    width: 640px;
     -webkit-transition: 0.2s cubic-bezier(0,0,0.02,1);
     transition: 0.2s cubic-bezier(0,0,0.02,1);
     overflow-x: hidden;
@@ -15,7 +15,7 @@ iframe.opendir_updates_iframe:hover {
     margin-top: -26px;
     border-color: #c24fab;
     height: 252px;
-    width: 620px;
+    width: 640px;
     -webkit-transition: 0.3s cubic-bezier(0,0,0.02,1);
     transition: 0.3s cubic-bezier(0,0,0.02,1);
     overflow-x: hidden;
