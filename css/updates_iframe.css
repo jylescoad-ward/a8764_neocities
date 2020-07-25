@@ -7,9 +7,15 @@ iframe.homepage_updates_iframe {
     -webkit-transition: 0.2s cubic-bezier(0,0,0.02,1);
     transition: 0.2s cubic-bezier(0,0,0.02,1);
     overflow-x: hidden;
-    overflow-y: scroll;
-    overflow: hidden;
+    overflow-y: hidden;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
 }
+
+iframe.homepage_updates_iframe::-webkit-scrollbar {
+  display: none;
+}
+
 iframe.homepage_updates_iframe:hover {
     position: absolute;
     margin-top: -26px;
