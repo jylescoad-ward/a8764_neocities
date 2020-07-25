@@ -9,6 +9,12 @@ iframe.opendir_updates_iframe {
     transition: 0.2s cubic-bezier(0,0,0.02,1);
     overflow-x: hidden;
     overflow-y: hidden;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+iframe.opendir_updates_iframe::-webkit-scrollbar {
+  display: none;
 }
 iframe.opendir_updates_iframe:hover {
     position: absolute;
